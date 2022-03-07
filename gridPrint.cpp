@@ -2,6 +2,18 @@
 
 using namespace std;
 
+void GetUserChar(char& userChar);
+void PrintGrid(char userChar);
+
+int main() {
+    char userChar;
+
+    GetUserChar(userChar);
+    PrintGrid(userChar);
+
+    return 0;
+}
+
 void GetUserChar(char& userChar) {
     cout << "What letter would you like to print in a grid? ";
     cin >> userChar;
@@ -15,13 +27,4 @@ void PrintGrid(char userChar) {
         }
         cout << endl;
     }
-}
-
-int main() {
-    char userChar;
-
-    GetUserChar(userChar);
-    PrintGrid(userChar);
-
-    return 0;
 }
