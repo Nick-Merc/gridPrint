@@ -6,7 +6,7 @@ using namespace std;
 int main() {
     char userChar;
 
-    GetUserChar(userChar);
+    userChar = GetUserChar();
     PrintGrid(userChar);
 
     return 0;

@@ -1,7 +1,7 @@
 #ifndef COMMON_H
 #define COMMON_H
 
-void GetUserChar(char& userChar);
+char GetUserChar();
 void PrintGrid(char userChar);
 
 #endif
