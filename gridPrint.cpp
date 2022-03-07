@@ -1,8 +1,8 @@
 #include <iostream>
+#include "Common.h"
 
 using namespace std;
 
-void GetUserChar(char& userChar);
 void PrintGrid(char userChar);
 
 int main() {
@@ -12,12 +12,6 @@ int main() {
     PrintGrid(userChar);
 
     return 0;
-}
-
-void GetUserChar(char& userChar) {
-    cout << "What letter would you like to print in a grid? ";
-    cin >> userChar;
-    cout << endl;
 }
 
 void PrintGrid(char userChar) {
