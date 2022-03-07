@@ -1,7 +1,5 @@
 #include "Common.h"
 
-using namespace std;
-
 int main() {
     char userChar;
 
