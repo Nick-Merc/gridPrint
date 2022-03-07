@@ -1,5 +1,5 @@
-output: gridPrint.o GetUserChar.o PrintGrid.o
-	g++ gridPrint.o GetUserChar.o PrintGrid.o -o output
+gridPrint.exe: gridPrint.o GetUserChar.o PrintGrid.o
+	g++ gridPrint.o GetUserChar.o PrintGrid.o -o gridPrint.exe
 
 gridPrint.o: gridPrint.cpp Common.h
 	g++ -c gridPrint.cpp
@@ -11,4 +11,4 @@ PrintGrid.o: PrintGrid.cpp Common.h
 	g++ -c PrintGrid.cpp
 
 clean:
-	rm *.o output
+	rm *.o gridPrint.exe
