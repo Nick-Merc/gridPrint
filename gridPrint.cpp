@@ -2,6 +2,26 @@
 
 using namespace std;
 
+void GetUserChar(char& userChar) {
+    cout << "What letter would you like to print in a grid? ";
+    cin >> userChar;
+    cout << endl;
+}
+
+void PrintGrid(char userChar) {
+    for (int i = 0; i < 5; ++i) {
+        for (int q = 0; q < 5; ++q) {
+            cout << userChar;
+        }
+        cout << endl;
+    }
+}
+
 int main() {
-    //fixme
+    char userChar;
+
+    GetUserChar(userChar);
+    PrintGrid(userChar);
+
+    return 0;
 }
